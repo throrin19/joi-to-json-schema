@@ -14,9 +14,9 @@ let TYPES = {
         return result.push(convert(match.schema, transformer));
       }
 
-      if (!match.is) {
-        throw new Error('joi.when requires an "is"');
-      }
+      // if (!match.is) {
+      //   throw new Error('joi.when requires an "is"');
+      // }
       if (!(match.then || match.otherwise)) {
         throw new Error('joi.when requires one or both of "then" and "otherwise"');
       }
